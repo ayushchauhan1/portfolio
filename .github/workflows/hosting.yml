@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: 12
 
-      - name: Build React App
+      - name: Build Vite App
         run: |
           npm install
-          CI=false npm run build
+          npm run build
           npm run copy
           npm run copy2
 
