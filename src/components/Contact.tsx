@@ -19,7 +19,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#60a5fa] to-[#a855f7] flex items-center justify-center gap-3"
+            className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#60a5fa] to-[#a855f7] flex items-center justify-center gap-3 w-full text-center"
           >
             <MessageCircle className="h-8 w-8 md:h-10 md:w-10" />
             Let's Connect
@@ -28,14 +28,16 @@ const Contact = () => {
             Whether you're interested in discussing technology, startups, or potential collaborations,
             I'm always open to connecting with fellow innovators and entrepreneurs.
           </p>
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-[#60a5fa] to-[#a855f7] hover:from-[#3b82f6] hover:to-[#9333ea] hover:scale-105 text-white hover:text-white transition-all duration-300 text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-xl shadow-lg hover:shadow-xl transform"
-            onClick={() => window.open('https://api.whatsapp.com/send?phone=6397228160', '_blank')}
-          >
-            <MessageCircle className="h-5 w-5 md:h-6 md:w-6 mr-2" />
-            Get in Touch
-          </Button>
+          <div className="flex justify-center">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-[#60a5fa] to-[#a855f7] hover:from-[#3b82f6] hover:to-[#9333ea] hover:scale-105 text-white hover:text-white transition-all duration-300 text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-xl shadow-lg hover:shadow-xl transform"
+              onClick={() => window.open('https://api.whatsapp.com/send?phone=6397228160', '_blank')}
+            >
+              <MessageCircle className="h-5 w-5 md:h-6 md:w-6 mr-2" />
+              Get in Touch
+            </Button>
+          </div>
         </div>
       </Card>
     </motion.section>

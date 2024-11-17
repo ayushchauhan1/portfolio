@@ -43,7 +43,7 @@ const Experience = () => {
       >
         Professional Journey
       </motion.h2>
-      <div className="space-y-4 md:space-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
         {experiences.map((exp, index) => (
           <ExperienceCard
             key={exp.title}

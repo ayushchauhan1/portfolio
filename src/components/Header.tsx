@@ -72,14 +72,15 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden text-white hover:text-white hover:bg-blue-900/30 hover:scale-105 transition-all duration-300"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <Menu className="h-6 w-6" />
-          </Button>
+         {/* Mobile menu button */}
+<Button
+  variant="ghost"
+  size="icon"
+  className="md:hidden text-white hover:text-white hover:bg-blue-900/30 hover:scale-105 transition-all duration-300"
+  onClick={() => setIsMenuOpen(!isMenuOpen)}
+>
+  <Menu className="h-6 w-6 text-white" />  {/* Ensures the icon is white */}
+</Button>
         </div>
 
         {/* Mobile navigation */}

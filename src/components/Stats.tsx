@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
-import { Rocket } from 'lucide-react';
+import { Star } from 'lucide-react';  // You can replace this with any other icon you like
 
 const Stats = () => {
   const stats = [
@@ -28,12 +28,10 @@ const Stats = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold mb-8 md:mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
+          className="text-3xl md:text-4xl font-bold mb-8 md:mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 w-full flex justify-center items-center"
         >
-          <div className="flex items-center justify-center gap-3">
-            <Rocket className="h-8 w-8 md:h-10 md:w-10" />
-            <span>Flabs Impact</span>
-          </div>
+          <Star className="h-8 w-8 md:h-10 md:w-10 mr-3 text-yellow-400" />  {/* Added a Star icon */}
+          <span>Flabs Impact</span>
         </motion.h2>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
