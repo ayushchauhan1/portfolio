@@ -76,6 +76,9 @@ const Header = () => {
 <Button
   variant="ghost"
   size="icon"
+  style={{
+    width: "20%"
+  }}
   className="md:hidden text-white hover:text-white hover:bg-blue-900/30 hover:scale-105 transition-all duration-300"
   onClick={() => setIsMenuOpen(!isMenuOpen)}
 >
