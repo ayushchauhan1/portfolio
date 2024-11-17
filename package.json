@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "copy": "cp ./CNAME ./build/CNAME",
+    "copy2": "cp ./404.html ./build/404.html"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
